@@ -3,13 +3,13 @@ package br.com.brian.exception;
 import java.io.Serializable;
 import java.util.Date;
 
-public class ExcptionReponse implements Serializable {
+public class ExceptionReponse implements Serializable {
     private static final long serialVersionUID = 1L;
     private Date timestamp;
     private String message;
     private String details;
 
-    public ExcptionReponse(Date timestamp, String message, String details) {
+    public ExceptionReponse(Date timestamp, String message, String details) {
         super();
         this.timestamp = timestamp;
         this.message = message;
