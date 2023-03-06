@@ -3,6 +3,36 @@ server:
 spring:
   application:
     name: brian-config-server
-  profiles:
-    active:
-    - native
+
+  ### Para pegar configurações em pasta local ao projeto
+  #profiles:
+    #active:
+      #- native
+
+  ### Para pegar configurações em projeto externo
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/briansiervi/config-server
+          #username: username
+          #password: password
+          default-label: main
+          search-paths:
+            - 'greeting-service*' #pesquisa a pasta e arquivos internos
+
+  ## links
+    ##  http://localhost:8888/application/default
+    ##  http://localhost:8888/greeting-service/default
+
+    ##  http://localhost:8888/application-dev/default
+    ##  http://localhost:8888/greeting-service/dev
+
+    ##  http://localhost:8888/application-perf/default
+    ##  http://localhost:8888/greeting-service/perf
+
+    ##  http://localhost:8888/application-prod/default
+    ##  http://localhost:8888/greeting-service/prod
+
+    ##  http://localhost:8888/application-qa/default
+    ##  http://localhost:8888/greeting-service/qa
