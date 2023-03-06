@@ -1,4 +1,4 @@
-package br.com.brian.greetingservice;
+package br.com.brian;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

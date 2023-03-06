@@ -1,4 +1,4 @@
-package br.com.brian.greetingservice;
+package br.com.brian.models;
 
 public class Greeting {
 	
