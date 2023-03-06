@@ -14,12 +14,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/briansiervi/microservices
+          uri: https://github.com/briansiervi/config-server
           #username: username
           #password: password
           default-label: main
           search-paths:
-            - '04-brian-config-server-external-files/greeting-service*' #pesquisa a pasta e arquivos internos
+            - 'greeting-service*' #pesquisa a pasta e arquivos internos
 
   ## links
     ##  http://localhost:8888/application/default
